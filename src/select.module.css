@@ -2,7 +2,7 @@
   position: relative;
   width: 20rem;
   min-height: 1.5rem;
-  border: 0.5rem solid #777;
+  border: 0.05rem solid #777;
   display: flex;
   align-items: center;
 
@@ -59,6 +59,7 @@
   border-radius: 0.25rem;
   width: 100%;
   top: calc(100% + 0.25rem);
+  left: 0;
   background-color: white;
   z-index: 100;
 }
@@ -72,11 +73,11 @@
   cursor: pointer;
 }
 
+.option.selected {
+  background-color: hsl(200, 100%, 70%);
+}
+
 .option.highlighted {
   background-color: hsl(200, 100%, 50%);
   color: white;
-}
-
-.option.selected {
-  background-color: hsl(200, 100%, 70%);
 }
